@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <title>HiPChips at ISCA-2022</title>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"> 
+  <style>
+    body, html {
+      height: 100%;  
+      font-family: "Inconsolata", sans-serif; 
+    }
+    .bgimg {
+      height: 20%;
+      background-position: center 0;  
+      background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+    }     
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 32px;
+        border-bottom: 1px solid #cccccc;
+        color: black;
+    }
+    .menu {  
+      display: none;
+    }
+    
+    .bold { font-weight: bold; }
+    .red { color: #FF0000; }
+    
+    </style>
+<body>
+    <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#head" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="https://hpca-conf.org/2023/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Venue</a>
+    <a href="#intro" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Introduction</a>
+    <a href="#organizers" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Organizers</a>
+    <a href="#speakers" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Speakers</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class= "bgimg w3-display-container w3-grayscale-min" style="background-color:lightgray" id="head">
+  <div class="w3-display-middle w3-center">
+    <h1 style="text-align: center;" id="t1">The HiPChips Conference</h1>
+  </div>
+</header>
+  
+    <h4 style="text-align: center;">The 1st International Workshop on</h4>
+    <h3 style="text-align: center;">High Performance Chiplet and Interconnnect Architectures (<strong>HiPChips</strong>) </h3>
+    <h4 style="text-align: center;">Colocated with &nbsp;<a href="https://iscaconf.org/isca2022/" style="color: blue">ISCA 2022</a></h4>
+    <h4 style="text-align: center;">January 19th, New York City, New York</h4>
+    <center><img src="./images/hipchips3.jpg" width="15%" height="auto"> </center>
+  
+<div class="w3-row-padding w3-padding-16 w3-container" id="intro">
+  <div class="w3-content">          
+      <h2>Introduction</h2>
+    <h5 class="w3-text-black">The 1st International Workshop on High Performance Chiplet and Interconnect Architectures (HiPChips), 
+      sponsored by the Open Domain Specific
+      Architecture (ODSA) Sub-Project, was held on June 19th, 2022, in conjunction 
+      with the 49th International Symposium on Computer Architecture (ISCA) in New York City, New York, USA  (Attendee information).
+    </h5>
+    <h5 class="w3-text-black">The major objective of this workshop was to bring researchers from academia and industry together to communicate their ideas, 
+      share knowledge of advanced technologies and new development on but not limited to the following topics:
+    </h5>
+    <h5 class="w3-text-black">
+      <p>
+        <li> Chiplet-based accelerator level parallelism (ALP) </li>
+        <li> Chiplet architecture for large scale system design </li>
+        <li> Physical and logical inter-die interface design for heterogeneous architectures </li>
+        <li> Coherent and non-coherent data sharing protocols via fast chiplet interconnection </li>
+        <li> Chiplet architectures for in-memory computing and other emerging technologies </li>
+        <li> ODSA-based 3D architecture for efficient ML acceleration</li>
+        <li> Chiplet-based secure computing</li>
+        <li> Power evaluation and performance modeling of chiplet architecture</li>
+        <li> Software optimization framework with fast inter-chiplet network</li>
+        <li> Chiplet topology aware ML optimizations</li>
+        <li> Scheduling for massive heterogeneous chiplet-based processors</li>
+      </p>    
+    </h5>
+    <h5 class="w3-text-black"> Machine learning (ML), high performance computing (HPC), and the convergence of both are becoming the major driving force to 
+      define future computer architectures in both data center and edge. As performance requirements of workloads have catapulted, 
+      heterogeneous computing with domain-specific accelerators (DSA) is deemed as a new computing paradigm to meet 
+      the computation demand in the post-Moore era.
+    </h5>
+    <h5 class="w3-text-black"> While an accelerator architecture is still evolving to continuously integrate more components to boost its computing horsepower, 
+        the increasing cost of silicon results in the rise of chiplet architectures.
+    </h5>
+    <h5 class="w3-text-black"> As a promising alternative to advance a chip design, chiplets take advantages of the recent development of packaging 
+      technologies to reduce the complexity of traditional monolithic system-on-a-chip (SoC) design by improving system-level 
+      interconnection density and reducing power consumption via mix-and-matching existing or new components and integrating 
+      them into a single package. The modularized approach presumably can shorten the development time and improve yield to 
+      lower the manufacturing costs. However, one of the biggest challenges industry currently faces is lack of standards and 
+      tools to allow different pieces of silicon across vendors to be tied together and work seamlessly through a common interface.
+    </h5>
+    <h5 class="w3-text-black"> At the same time, as individual devices continue to shrink and more heterogeneous chiplets are integrated, innovations on 
+      chiplet-based computing architectures will be required. Though communication between chiplets is typically slower 
+      than on-chip communication, distances are shorter and there might be more conduits for inter -chip signals.
+      Thus, collectively inter-chiplet communication may be faster with less energy consumption. So how to distribute 
+      data among chiplets and optimize data movement for efficient spatial parallel processing is another key to success.
+    </h5>
+
+    <h5 class="w3-text-black"> The Open Compute Project Foundation (OCP) is a global industrial consortium with the mission to enable mainstream 
+      delivery of open and efficient designs for scalable computing. Its Open Domain-Specific Architecture (ODSA) 
+      working group was incubated to define the standards for a coherent cross-industry open ecosystem of chiplets and 
+      make a viable chiplet market a reality. ODSA is situated strategically to address challenges of chiplet interoperability 
+      due to inherent limitations of proprietary designs, including physical interfaces, chiplet base functionalities for 
+      top software stack, as well as packaging and testing of products across vendors.
+    </h5>
+
+    <h5 class="w3-text-black"> ODSA's goal is to create an open chiplet marketplace that allows systems in packages to be built from building blocks    
+      from multiple vendors with speed and simplicity to enable shipping new solutions faster. To achieve this, 
+      ODSA strategy is centered on following three core areas:
+    </h5>
+    <h5 class="w3-text-black">
+      <p>
+        <li> Area 1: Enable open die to die interfaces to reduce barrier for interoperation </li>
+        <li> Area 2: Create reference designs as starting points for allowing technology development </li>
+        <li> Area 3: Define business reference workflows for enabling reusable, open practices </li>
+      </p>
+    </h5>
+    <h5 class="w3-text-black"> The 1st International workshop on the High Performance Chiplet and Interconnect Architectures (HiPChips-2022), 
+      endorsed by OCP/ODSA working group, is a new workshop targeting on researches with an interpenetration effect 
+      between academia and industry: on one hand, this workshop helps researchers understand the latest progress on 
+      chiplet-powered architectures for data-intensive applications and ML/HPC-motivated chiplet designs; on the other hand, 
+      it helps promote the open chiplet standards to foster collaborations on further development of the chiplet ecosystem. 
+      The major objective of this workshop is to bring researchers from academia and industry together to communicate their ideas, 
+      share knowledge of advanced technologies and new development on but not limited to the following topics:
+    </h5>
+    <h5 class="w3-text-black"> 
+      <p>
+        <li> Chiplet-based accelerator level parallelism (ALP) </li>
+        <li> Chiplet architecture for large scale system design </li>
+        <li> Physical and logical inter-die interface design for heterogeneous architectures </li>
+        <li> Coherent and non-coherent data sharing protocols via fast chiplet interconnection </li>
+        <li> Chiplet architectures for in-memory computing and other emerging technologies </li>
+        <li> ODSA-based 3D architecture for efficient ML acceleration </li>
+        <li> Chiplet-based secure computing </li>
+        <li> Power evaluation and performance modeling of chiplet architecture </li>
+        <li> Software optimization framework with fast inter-chiplet network </li>
+        <li> Chiplet topology aware ML optimizations </li>
+      </p>
+    </h5>
+  </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-container" id="organizers">
+    <div class="w3-content">
+      <h2>Organizers</h2>
+        <h5 class="w3-text-black">
+          <p> <strong>Weifeng Zhang, Lightelligence</strong> </p>
+  Dr. Weifeng Zhang is the Chief Architect and VP of Software at Lightelligence Inc, 
+  responsible for hardware software co-design and software ecosystem to enpower optical 
+  computing and interconnect technologies. Prior to joining Lightelligence, Weifeng was a fellow 
+  of Alibaba Cloud and the Chief Scientist of HeterogeneousComputing at Alibaba Cloud
+  Infrastructure. He currently is the Tech Chair of AI Co-Design Workgroup at 
+  Open Computing Project Foundation (OCP) and was also a founding member of 
+  the Board of Directors at MLCommons&#8482; (MLPerf&#8482;). Weifeng received his PhD 
+  in Computer Science from University of California, San Diego (UCSD).
+        </h5>
+        <h5 class="w3-text-black">
+          <p><strong>Dharmesh Jani, Meta Platforms</strong></p>
+Dharmesh Jani (‘DJ’) is Ecosystem and Partnership lead at Meta and has been an 
+active member of OCP since 2012. He is also co-chair of the OCP Incubation 
+Committee and involved in multiple OCP projects such as 
+Open Domain Specific Accelerator (ODSA) and Sustainability. 
+Prior to Meta, he has worked in Fortune 500 companies leading product development 
+as well as in startups building zero to one businesses. He has BTech from 
+IIT-Bombay, MSEE from UCLA and MBA from UC-Berkeley (Haas).
+        </h5>
+        <h5 class="w3-text-black">
+          <p><strong>Vijay Janapa Reddi, Harvard University</strong></p>
+           Prof. Janapa Reddi is an Associate Professor in John A. Paulson School of Engineering and Applied Sciences at Harvard University,
+          a founding member of MLCommons and serves on the MLCommons&#8482; Board of Directors, and a Co-Chair of MLPerf Inference 
+          that is responsible for fair and useful benchmarks for measuring training
+          and inference performance of ML hardware, software, and services. 
+          Dr. Janapa Reddi is a recipient of multiple honors and awards, including the National Academy of Engineering (NAE) Gilbreth Lecturer Honor (2016), 
+          IEEE TCCA Young Computer Architect Award (2016), Intel Early Career Award (2013),
+          Google Faculty Research Awards (2012, 2013, 2015, 2017, 2020), Best Paper at the 2005 International Symposium on Microarchitecture (MICRO), 
+          Best Paper at the 2009 International Symposium on High Performance Computer Architecture (HPCA), 
+          MICRO and HPCA Hall of Fame (2018 and 2019, respectively), and IEEE’s Top Picks in Computer Architecture awards (2006, 2010, 2011, 2016, 2017). 
+          He received a Ph.D. in computer science from Harvard University. 
+        </h5>
+    </div>
+  </div>   
+    
+  <div class="w3-row-padding w3-padding-16 w3-container" id="speakers">
+    <div class="w3-content">
+      <h2>Speakers</h2>
+        <h5 class="w3-text-black">
+          <p>Currently still being invited. Will publish the speaker list soon.</p>
+        </h5>
+    </div>
+  </div>   
+  </body>
+</html>
