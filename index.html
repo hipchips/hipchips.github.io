@@ -37,19 +37,18 @@
 
 <body>
 
-<!-- Navbar 
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+  <div class="w3-sidebar w3-black w3-card w3-left-align w3-large" style="width:min-content; opacity:80%; ">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#head" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#intro" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Introduction</a>
-    <a href="#organizers" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Organizers</a>
-  </div>
-</div>
--->
-  
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-blue">Home</a>
+    <a href="#mission" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue">Mission</a>
+    <a href="#organizers" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue">Organizers</a>
+    <a href="#events" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue">Events</a>
+ </div>
+</div>  
+
 <!-- Header with image -->
-<header class= "bgimg w3-display-container w3-grayscale-min" style="background-color:lightgray" id="head">
+<header class= "bgimg w3-display-container w3-grayscale-min" style="background-color:lightgray" id="home">
   <div class="w3-display-middle w3-center">
     <h1 style="text-align: center;" id="t1">The HiPChips Conference</h1>
   </div>
@@ -113,55 +112,19 @@
     </div>
      
      
-<!-- Comment out for now 
-<div class="w3-row-padding w3-padding-16 w3-container w3-content" id="intro">
-    <h2>Introduction</h2>
-    
-    <h5 class="w3-text-black"> Machine learning (ML), high performance computing (HPC), and the convergence of both are becoming the major driving force to 
-      define future computer architectures in both data center and edge. As performance requirements of workloads have catapulted, 
-      heterogeneous computing with domain-specific accelerators (DSA) is deemed as a new computing paradigm to meet 
-      the computation demand in the post-Moore era.
-    </h5>
-    <h5 class="w3-text-black"> While an accelerator architecture is still evolving to continuously integrate more components to boost its computing horsepower, 
-        the increasing cost of silicon results in the rise of chiplet architectures.
-    </h5>
-    <h5 class="w3-text-black"> As a promising alternative to advance a chip design, chiplets take advantages of the recent development of packaging 
-      technologies to reduce the complexity of traditional monolithic system-on-a-chip (SoC) design by improving system-level 
-      interconnection density and reducing power consumption via mix-and-matching existing or new components and integrating 
-      them into a single package. The modularized approach presumably can shorten the development time and improve yield to 
-      lower the manufacturing costs. However, one of the biggest challenges industry currently faces is lack of standards and 
-      tools to allow different pieces of silicon across vendors to be tied together and work seamlessly through a common interface.
-    </h5>
-    <h5 class="w3-text-black"> At the same time, as individual devices continue to shrink and more heterogeneous chiplets are integrated, innovations on 
-      chiplet-based computing architectures will be required. Though communication between chiplets is typically slower 
-      than on-chip communication, distances are shorter and there might be more conduits for inter -chip signals.
-      Thus, collectively inter-chiplet communication may be faster with less energy consumption. So how to distribute 
-      data among chiplets and optimize data movement for efficient spatial parallel processing is another key to success.
-    </h5>
-
-    <h5 class="w3-text-black"> The 1st International workshop on the High Performance Chiplet and Interconnect Architectures (HiPChips-2022), 
-      endorsed by OCP/ODSA working group, is a new workshop targeting on researches with an interpenetration effect 
-      between academia and industry: on one hand, this workshop helps researchers understand the latest progress on 
-      chiplet-powered architectures for data-intensive applications and ML/HPC-motivated chiplet designs; on the other hand, 
-      it helps promote the open chiplet standards to foster collaborations on further development of the chiplet ecosystem. 
-      The major objective of this workshop is to bring researchers from academia and industry together to communicate their ideas, 
-      share knowledge of advanced technologies and new development on but not limited to the following topics:
-    </h5>
-    <h5 class="w3-text-black"> 
-      <p>
-        <li> Chiplet-based accelerator level parallelism (ALP) </li>
-        <li> Chiplet architecture for large scale system design </li>
-        <li> Physical and logical inter-die interface design for heterogeneous architectures </li>
-        <li> Coherent and non-coherent data sharing protocols via fast chiplet interconnection </li>
-        <li> Chiplet architectures for in-memory computing and other emerging technologies </li>
-        <li> ODSA-based 3D architecture for efficient ML acceleration </li>
-        <li> Chiplet-based secure computing </li>
-        <li> Power evaluation and performance modeling of chiplet architecture </li>
-        <li> Software optimization framework with fast inter-chiplet network </li>
-        <li> Chiplet topology aware ML optimizations </li>
-      </p>
-    </h5>
-  </div>
+    <div class="w3-row-padding w3-padding-16 w3-container w3-content" id="events">
+      <h4 style="text-align: center;"><strong>HiPChips Events</strong></h4>
+      <ul style="list-style: none;">
+        <li> <a href="https://hipchips.github.io/isca2022/"> The 1st HiPChips conference at ISCA-2022 </a>,
+             New York City, Jun 19th, 2022. 
+             [Sponsored by OCP ODSA workgroup] 
+        </li>
+        <li> <a href="https://hipchips.github.io/hpca2023/"> The 2nd HiPChips conference at HPCA-2023 </a>,
+             Montreal, Quebec, Canada, Feb 26th, 2023
+        </li>
+        <li> The 3rd HiPChips conference (<i>under planning</i>) </li>
+      </ul>
+    </div>
   
   </body>
 </html>
