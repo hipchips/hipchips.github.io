@@ -25,6 +25,7 @@
         border-bottom: 1px solid #cccccc;
         color: black;
     }
+    table {border: none;}
     .menu {  
       display: none;
     }
@@ -33,8 +34,10 @@
     .red { color: #FF0000; }
     
     </style>
+
 <body>
-    <!-- Navbar -->
+
+<!-- Navbar 
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
@@ -43,6 +46,7 @@
     <a href="#organizers" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Organizers</a>
   </div>
 </div>
+-->
   
 <!-- Header with image -->
 <header class= "bgimg w3-display-container w3-grayscale-min" style="background-color:lightgray" id="head">
@@ -51,12 +55,57 @@
   </div>
 </header>
   
-    <h4 style="text-align: center;">The International Workshop on</h4>
-    <h3 style="text-align: center;">High Performance Chiplet and Interconnnect Architectures (<strong>HiPChips</strong>) </h3>e
+  <h4 style="text-align: center;">The International Workshop on</h4>
+  <h3 style="text-align: center;">High Performance Chiplet and Interconnnect Architectures (<strong>HiPChips</strong>) </h3>
   
-<div class="w3-row-padding w3-padding-16 w3-container" id="intro">
-  <div class="w3-content">          
-      <h2>Introduction</h2>
+  <p> &nbsp; </p>
+  
+   <div class="w3-row-padding w3-padding-16 w3-container" id="organizers">
+    <div class="w3-content">
+      <table cellpadding="0" cellspacing="0" style="width:100%">
+        <tbody>
+          <tr>
+            <td width="25%" align="center"> 
+              <img src="./portraits/weifeng.jpg" height="auto"> <br>
+              <strong> Dr. Weifeng Zhang </strong> <br>
+              Chief Architecture & VP of Software <br>
+              Lightelligence, Inc
+            </td>
+            <td width="75%" align="left">
+              Dr. Weifeng Zhang is the Chief Architect and VP of Software at Lightelligence Inc, 
+              responsible for hardware software co-design and software ecosystem to enpower optical 
+              computing and interconnect technologies. Prior to joining Lightelligence, Weifeng was a fellow 
+              of Alibaba Cloud and the Chief Scientist of HeterogeneousComputing at Alibaba Cloud
+              Infrastructure. He currently is the Tech Chair of AI Co-Design Workgroup at 
+              Open Computing Project Foundation (OCP) and was also a founding member of 
+              the Board of Directors at MLCommons&#8482; (MLPerf&#8482;). Weifeng received his PhD 
+              in Computer Science from University of California, San Diego (UCSD)
+            </td>
+          </tr>
+          <tr>
+            <td align="center"> 
+              <img src="./portraits/dj.jpg" height="auto"> <br>
+              <strong> Dharmesh Jani </strong> <br>
+              Co-chair of the OCP Incubation Committee <br>
+              Meta Platforms
+            </td>
+            <td align="left">
+              Dharmesh Jani (‘DJ’) is Ecosystem and Partnership lead at Meta and has been an 
+              active member of OCP since 2012. He is also co-chair of the OCP Incubation 
+              Committee and involved in multiple OCP projects such as Open Domain Specific Accelerator (ODSA)
+              and Sustainability. Prior to Meta, he has worked in Fortune 500 companies leading product development 
+              as well as in startups building zero to one businesses. He has BTech from IIT-Bombay, 
+              MSEE from UCLA and MBA from UC-Berkeley (Haas).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     
+     
+<!-- Comment out for now 
+<div class="w3-row-padding w3-padding-16 w3-container w3-content" id="intro">
+    <h2>Introduction</h2>
     
     <h5 class="w3-text-black"> Machine learning (ML), high performance computing (HPC), and the convergence of both are becoming the major driving force to 
       define future computer architectures in both data center and edge. As performance requirements of workloads have catapulted, 
@@ -103,34 +152,6 @@
       </p>
     </h5>
   </div>
-  </div>
-
-  <div class="w3-row-padding w3-padding-16 w3-container" id="organizers">
-    <div class="w3-content">
-      <h2>Organizers</h2>
-        <h5 class="w3-text-black">
-          <p> <strong>Weifeng Zhang, Lightelligence</strong> </p>
-  Dr. Weifeng Zhang is the Chief Architect and VP of Software at Lightelligence Inc, 
-  responsible for hardware software co-design and software ecosystem to enpower optical 
-  computing and interconnect technologies. Prior to joining Lightelligence, Weifeng was a fellow 
-  of Alibaba Cloud and the Chief Scientist of HeterogeneousComputing at Alibaba Cloud
-  Infrastructure. He currently is the Tech Chair of AI Co-Design Workgroup at 
-  Open Computing Project Foundation (OCP) and was also a founding member of 
-  the Board of Directors at MLCommons&#8482; (MLPerf&#8482;). Weifeng received his PhD 
-  in Computer Science from University of California, San Diego (UCSD).
-        </h5>
-        <h5 class="w3-text-black">
-          <p><strong>Dharmesh Jani, Meta Platforms</strong></p>
-Dharmesh Jani (‘DJ’) is Ecosystem and Partnership lead at Meta and has been an 
-active member of OCP since 2012. He is also co-chair of the OCP Incubation 
-Committee and involved in multiple OCP projects such as 
-Open Domain Specific Accelerator (ODSA) and Sustainability. 
-Prior to Meta, he has worked in Fortune 500 companies leading product development 
-as well as in startups building zero to one businesses. He has BTech from 
-IIT-Bombay, MSEE from UCLA and MBA from UC-Berkeley (Haas).
-        </h5>
-    </div>
-  </div>   
-   
+  
   </body>
 </html>
